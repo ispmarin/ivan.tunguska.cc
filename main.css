@@ -3,7 +3,7 @@ body {
   font-family: helvetica, sans-serif;
   color: #000000;
   background-color: #a0a0a0;
-  background-image: url(/ggb.jpg);
+  background-image: url(/20100912-057.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -27,4 +27,14 @@ body {
 
 ul {
   line-height: 2em;
+}
+
+div#bottom {
+  position: fixed;
+  bottom: 0;
+  font-size: 8px;
+
+  /* And if you want the div to be full-width: */
+  left: 0;
+  right: 0;
 }
