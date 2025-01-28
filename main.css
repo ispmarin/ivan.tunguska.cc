@@ -33,8 +33,6 @@ ul {
   position: fixed;
   bottom: 0;
   font-size: 4px;
-
-  /* And if you want the div to be full-width: */
   left: 0;
   right: 0;
 }
