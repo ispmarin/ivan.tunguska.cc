@@ -29,7 +29,7 @@ ul {
   line-height: 2em;
 }
 
-div#bottom {
+.footer {
   position: fixed;
   bottom: 0;
   font-size: 8px;
