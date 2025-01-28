@@ -1,15 +1,15 @@
-/* Yep, it looks like a name tag.  Give your pattern matcher a cookie. */
-
 body {
     background-color: #eeeeee;
     font-family: verdana, arial, helvetica, sans-serif;
     color: #000000;
-  
+    background-image: url(..//20100912-057.jpg);
     align: center;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 10px 0 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .post {
@@ -31,7 +31,7 @@ body {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     padding: 1px 5px 5px 5px;
-    background: #80d0f0;
+    background: #e8caa9;
   }
   
   .header a {
@@ -60,7 +60,7 @@ body {
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     padding: 5px 5px 5px 5px;
-    background: #80d0f0;
+    background: #e8caa9;
     text-align: center;
   }
   
