@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Writing</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<body>
+    <div class="header">
+        <h1><a href="/writing/">Writing</a></h1>
+            <p>
+                Whatever I write about data science, programming, management, technology, home lab, and other stuff.
+            </p>
+    </div>
+    <div class="date">2025-01-27</div>
+    <div class="post">
+        <h2>The traps that we create ourselves</h2>
+        <p>
+        I have a pain at work that I can't solve properly for a while. Part of my role is to do the project intake for the team: I'm the first line of contact for stakeholders and people that want to work with us. I also have a curious relationship with organization: I hate to do it, I truly hate it, but I must do it, to keep things, well, organized, otherwise I'll lose things left and right, so I love organization. It's weird, I know.
+        </p>
+        <p>
+        So what I need is to organize the way the intake process works, so I don't loose track of what project is on which state, and with whom I have to talk with. Yes, I know: this is a CRM, and a very simple one at that. But I can't have a full blown CRM at work, so I've been using Excel to track all this information. And it got to a point where it's unsustainable. There are too many columns in a sheet, lots of things that are not normalized - and should be, and so on. It's driving me crazy.
+        </p>
+        <p>
+        So I decided to do what any sane person would: I would code a CRM from scratch. On my free Sunday. Not a complete one, but a minimum thing that could solve my problems. A simple, dumb CRM. I decided to follow a good pattern of data management, and started designing a few tables and relationships. So far, so good. 
+        </p>
+        <p>
+         But then I thought, well, this would be easier in code than straight SQL, right? And I should use an ORM to make things simple, right? Of course I went this route. And three hours later, I have a nice model with my data classes, a PostgreSQL docker-compose file, all ready to go. And of course it doesn't run. SQLAlchemy refuses to create a table with no foreign key and insists that I can't declare a foreign key there. I copy the class definition to the main file, remove the import, and it works. Of course it's some weird circular dependency on where I'm creating the connection, where I'm importing declarative_base, and where I'm calling the classes. 
+        </p>
+        <p>
+        And that's when I realize I don't want to do this on my Sunday. Nope. I could debug that shit, but I will not. I refuse. I finally saw my trap of overdesigning a simple thing, coding away - because it's been a while since I really coded a full application - and forgot about doing what I should, being careful. And now I'm irritated that I wasted my time. My fault. Yes, I remembered several things and yes, it should be easy to fix, but the time and effort lost is irreversible. 
+        </p>
+        <p>
+        With a calmer head, I know that it was actually useful to code and bash my head. We do that every day. I also remembered a bunch of stuff, and to be honest with myself, coding can be fun. The real frustration is the number of things that are supposed to help us with software these days and are way more complex than needed, in a way that it's wonderful when all this abstraction can solve my problems magically, but the moment things go wrong, they go very wrong, and it's a huge pain to fix. And in the end, having a clear abstraction model in my head would prevent that, like, if I knew exactly what SQLAlchemy is doing under the hood. But then it's kinda back to square one: I have to understand the underlying abstraction to make it work, so why not just make it myself? And on and on. This is the trap that we create ourselves with our technology. Otherwise, it's kinda like magic: either it works and you don't know how, or it works and you don't want to know how.
+        </p>
+    </div>
+    <div class="footer">
+        <a href="/writing/">Writing</a>
+    </div>
+</body>
+</html>
